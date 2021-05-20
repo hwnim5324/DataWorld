@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="description" name="description">
+  <meta name="google" content="notranslate" />
+  <meta content="Mashup templates have been developped by Orson.io team" name="author">
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+  <link rel="logo" sizes="180x180" href="../static/assets/logo.png">
+  <link href="../static/assets/favicon.ico" rel="icon">
+  <title>Data World</title>
+
+  <link href="../static/main.550dcf66.css" rel="stylesheet">
+  <link href="../static/main.css" rel="stylesheet">
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <style>
+    
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&family=Shadows+Into+Light&display=swap');
+@font-face {
+    font-family: 'IBMPlexSansKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+    /* font-weight: normal; */
+    font-style: normal;
+}
+
+
+.Awwards-logotype-2018 {
+    width: 37.1%;
+    object-fit: contain;
+}
+
+h2{
+    color: #3874A3;
+    font-family: 'IBMPlexSansKR-Regular';
+    font-weight:bolder;
+    text-shadow: 2px 2px 2px rgba(56,116,163,0.3);
+}
+
+.ex3{
+    width: 40%;
+}
+
+.navbar-logo-img{
+    width: 20px;
+}
+
+/* 
+@keyframes txtColor {
+    0% {
+        opacity: 0.3;
+    }
+    50% {
+        color: #F6C94D;
+    }
+
+    100% {
+        color: #F6C94D;
+    }
+} */
+
+#sometext{
+    color: #3874A3;
+    font-family: 'IBMPlexSansKR-Regular';
+    font-weight:bolder;
+}
+#intro{
+    font-family: 'IBMPlexSansKR-Regular';
+    font-size: 2.3em;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(255,255,255,0.4);
+
+}
+
+p.maker{
+    text-align: center;
+    font-size: 1em;
+    color:#F6C94D;
+}
+.logo-img{
+    position: absolute;
+    /* opacity: 0.15; */
+    width: 5%;
+    margin-top: -10%;
+    margin-left: 20%;
+}
+
+
+.theme{
+    text-align: center;
+    padding-top: 3%;
+    margin: auto;
+    margin-top: 3%;
+    width: 50%;
+    height: 110px;
+    background-color: #eff1f6;
+    border-radius: 10px;
+}
+#themes{
+    width: 50%;
+    outline: none;
+    border:none;
+    border-radius: 50px;
+    padding: 1%;
+    padding-left: 3%;
+}
+
+form input:focus {
+  outline: none;
+}
+.Search-btn{
+    margin-left: 2%;
+    width: 10%;
+    padding: 1%;
+    background-color:#3874A3;
+    border-radius: 50px;
+    border:none;
+    outline: none;
+}
+.Search-btn:hover{
+  width: 10.5%;
+}
+.result-section{
+    background-color: #EFF1F6;
+}
+.result-p{
+    font-size: 1.2em;
+    font-weight:500;
+}
+.result-p span{
+    color: #3874A3;
+}
+.btn{
+    border-radius: 10px;
+    border-color: #3874A3;
+    /*border-color:white;*/
+    border-width: 3px;
+    background-color: #ffffff;
+    width: 17%;
+    height: auto;
+    text-align: center;
+    margin-right: 1.5%;
+    font-size:15px;
+    font-weight:bold;
+    box-shadow: 3px 3px 3px rgba(131,131,131,0.5) ;
+}
+.btn:hover{
+    border-color: rgba(56,116,163);
+}
+
+/* 아래부터 현우 주기 */
+/* 슬라이드 */
+ul,li{list-style:none;}   
+#slide {
+    width: 106%;
+    position:relative;
+    overflow:hidden;
+    margin: auto;
+    margin-left: -3%;
+    text-align: center;
+    }
+#slide * {
+    margin: 0;
+    padding: 0;
+}
+/* pos갯수 증가하면 ul li width 조절해야함.  */
+#slide ul{width:500%; height:100%;transition:1s; margin-bottom: 2%;}
+#slide ul:after{content:"";display:block;clear:both;}
+#slide li{float:left;width:20%;height:100%;}
+
+#slide input{display:none;}
+
+#slide label{
+    display:inline-block;
+    vertical-align:middle;
+    width:20px;height:20px;
+    border:2px solid #3874A3;
+    background:#fff;
+    transition:0.3s;
+    border-radius:50%;
+    cursor:pointer;
+    }
+
+#slide .pos .pos2{
+    text-align:center;
+    position:absolute;
+    bottom:6px;
+    left:0;width:100%;
+    text-align:center;}
+
+#pos1:checked~ul{margin-left:0%;}
+#pos2:checked~ul{margin-left:-100%;}
+#pos3:checked~ul{margin-left:-200%;}
+#pos4:checked~ul{margin-left:-300%;}
+
+#pos1:checked~.pos>label:nth-child(1){background:#3874A3;}
+#pos2:checked~.pos>label:nth-child(2){background:#3874A3;}
+#pos3:checked~.pos>label:nth-child(3){background:#3874A3;}
+#pos4:checked~.pos>label:nth-child(4){background:#3874A3;}
+
+
+#pos6:checked~ul{margin-left:0%;}
+#pos7:checked~ul{margin-left:-100%;}
+#pos8:checked~ul{margin-left:-200%;}
+#pos9:checked~ul{margin-left:-300%;}
+#pos10:checked~ul{margin-left:-400%;}
+#pos6:checked~.pos2>label:nth-child(1){background:#3874A3;}
+#pos7:checked~.pos2>label:nth-child(2){background:#3874A3;}
+#pos8:checked~.pos2>label:nth-child(3){background:#3874A3;}
+#pos9:checked~.pos2>label:nth-child(4){background:#3874A3;}
+#pos10:checked~.pos2>label:nth-child(5){background:#3874A3;}
+
+/* input section */
+
+.urlLink:hover {
+  width: 210px;
+  opacity: 0.8;
+  transition:0.3s;
+}
+
+.btn-container {
+  display:none;
+}
+
+.notify_text {
+  margin-top:10px;
+  display:inline-block;
+  opacity:0.7;
+}
+
+.url-container {
+  display:none;
+}
+
+.btn:focus {
+  outline:none;
+  background-color:#3874A3;
+  color:white;
+}
+
+.titleText{
+  font-weight: bold;
+}
+.result-section{
+  display:none;
+}
+
+
+/*지우기*/
+.url-container{
+  padding:0px;
+  width:100%;
+}
+.scoreName{
+  display:inline-block;
+  width:205px;
+  margin: 5px 7px;
+  padding:0px;
+  font-size:1.2em;
+  text-align:center;
+  font-weight:bold;
+}
+.footer{
+  height:120px;
+}
+.footerName {
+  display:inline-block;
+  position:absolute;
+}
+.footerMail {
+  float:left;
+  display:inline-block;
+  margin-left:65px;
+}
+.footerInsta {
+  float:left;
+  display:inline-block;
+  margin-left:15px;
+}
+
+.footerName span {
+  display:block;
+  color: white;
+  margin-top:0px;
+  opacity:0.9;
+}
+.footerMail span {
+  color: white;
+  margin-top:0px;
+  opacity:0.9;
+}
+.footerInsta span {
+  color: white;
+  margin-top:0px;
+  opacity:0.9;
+}
+.footer img{
+  opacity:0.8;
+}
+  </style>
+</head>
+
+<body>
+  <!-- Add your content of header -->
+  <header>
+    <nav class="navbar navbar-default active">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"
+            aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://127.0.0.1:8000/blog/" title="">
+            <img src="../static/assets/logo3.png" class="navbar-logo-img" alt="logo-img">
+            Data World
+          </a>
+        </div>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Add your site or app content here -->
+  <div class="hero-full-container background-image-container white-text-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <br>
+          <p id="intro">WEB TREND<br>DECISION SERVICE</p>
+          <p class="maker">by Data World</p>
+          <!-- <img src="./assets/images/awwards_logo.png" alt="awwwards-logo-image" class="Awwards-logotype-2018"> -->
+          <br><br>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-container">
+    <div class="container">
+
+<div class="row">
+        <div class="col-xs-12 col-md-8 col-md-offset-2">
+          <div class="text-center">
+            <h2 id="sometext">Web Trend Visualization</h2>
+            <br><p>'우리'는 웹 페이지 평가 사이트 'Awwwards'와 'Cssdesignawards'에서 <br>각각 약 10,000개의 웹사이트 정보를 받아왔습니다. </p>
+            <center>
+            <hr style="width:20%;height:1.5px;border:none;background-color:#3874A3;">
+            </center>
+            <br>
+            <p style="margin-bottom:20px;">  
+              <br>웹사이트를 제작한 국가들을 시각화하였고
+              <br>또한, 이 웹사이트들의 Category와 Technology, Design특징 Tag들을 받아와
+              <br>전체 웹사이트 그리고 평균 점수 상위5% 웹사이트들에 대한 빈도를 시각화했습니다. </p>
+          </div>
+          <div id="slide">
+            <input type="radio" name="pos" id="pos1" checked>
+            <input type="radio" name="pos" id="pos2">
+            <input type="radio" name="pos" id="pos3">
+            <input type="radio" name="pos" id="pos4">
+            <ul>
+              <!-- 태블로 -->
+              <li><div class="li1">
+                <div class='tableauPlaceholder' id='viz1621452866764' style='position: relative'><noscript><a href='#'><img alt='대시보드 2 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;wo&#47;world_16214517083840&#47;2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='world_16214517083840&#47;2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;wo&#47;world_16214517083840&#47;2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='ko' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1621452866764');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='800px';vizElement.style.height='627px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='800px';vizElement.style.height='627px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+              </div></li>
+              <li><div class="li2">
+                <div class='tableauPlaceholder' id='viz1621452791799' style='position: relative'><noscript><a href='#'><img alt='대시보드 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;wo&#47;world_16214517083840&#47;1_1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='world_16214517083840&#47;1_1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;wo&#47;world_16214517083840&#47;1_1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='ko' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1621452791799');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='800px';vizElement.style.height='627px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='800px';vizElement.style.height='627px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+              </div></li>
+                <li>
+                  <div class="li3">
+                    <div class='tableauPlaceholder' id='viz1621412461249' style='position: relative'><noscript><a href='#'><img alt='Tag Dashboard약 10,000개의 웹페이지 중 사용된 Category(주제), Technology(기술), Design(디자인)별 Tag 수 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;_1&#47;_16214122411460&#47;1_1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='_16214122411460&#47;1_1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;_1&#47;_16214122411460&#47;1_1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='ko' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1621412461249');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='800px';vizElement.style.height='627px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='800px';vizElement.style.height='627px';} else { vizElement.style.width='100%';vizElement.style.height='927px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                  </div>
+                </li>
+                <li><div class="li4">
+                  <div class='tableauPlaceholder' id='viz1621427700617' style='position: relative'><noscript><a href='#'><img alt='Average Score Dashboard평균 점수가 높은 웹페이지에서 사용된 Tag 빈도(디자인, 사용성, 창의성, 콘첸츠, 개발 점수의 평균) ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;sc&#47;score55&#47;allavg&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='score55&#47;allavg' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;sc&#47;score55&#47;allavg&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='ko' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1621427700617');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='800px';vizElement.style.height='627px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='800px';vizElement.style.height='627px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                </div></li>
+              </li>
+            </ul>
+            <p class="pos">
+                <label for="pos1"></label>
+                <label for="pos2"></label>
+                <label for="pos3"></label>
+                <label for="pos4"></label>
+            </p>
+          </div>
+
+          <!-- 태블로2 -->
+          <div class="text-center">
+            <br><br><br><p style="margin-bottom:20px;"> Design, Usability, Creativity, Content, Development 각 점수별 상위 5%의
+              <br>웹페이지에 사용된 Design과 Technology의 빈도수를 시각화한 것입니다.</p>
+          </div>
+
+
+          <div id="slide">
+            <input type="radio" name="pos2" id="pos6" checked>
+            <input type="radio" name="pos2" id="pos7">
+            <input type="radio" name="pos2" id="pos8">
+            <input type="radio" name="pos2" id="pos9">
+            <input type="radio" name="pos2" id="pos10">
+
+            <ul>
+              <!-- 태블로 -->
+                <li><div class="li6">
+                  <div class='tableauPlaceholder' id='viz1621414542117' style='position: relative'><noscript><a href='#'><img alt='Design Score Dashboard디자인 점수가 높은 웹페이지에서 사용된 Tag 빈도 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;4X&#47;4X8P8FG3Z&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;4X8P8FG3Z' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;4X&#47;4X8P8FG3Z&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='ko' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1621414542117');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='800px';vizElement.style.height='627px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='800px';vizElement.style.height='627px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                </div>
+              </li>
+                <li><div class="li7">
+                  <div class='tableauPlaceholder' id='viz1621414747268' style='position: relative'><noscript><a href='#'><img alt='Usability Score Dashboard사용성 점수가 높은 웹페이지에서 사용된  Tag 빈도 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;sc&#47;score55&#47;usability&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='score55&#47;usability' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;sc&#47;score55&#47;usability&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='ko' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1621414747268');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='800px';vizElement.style.height='627px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='800px';vizElement.style.height='627px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                </div></li>
+                <li><div class="li8">
+                  <div class='tableauPlaceholder' id='viz1621414829353' style='position: relative'><noscript><a href='#'><img alt='Creativity Score Dashboard창의성 점수가 높은 웹페이지에서 사용된  Tag 빈도 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;sc&#47;score55&#47;creativity&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='score55&#47;creativity' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;sc&#47;score55&#47;creativity&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='ko' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1621414829353');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='800px';vizElement.style.height='627px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='800px';vizElement.style.height='627px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                </div></li>
+                <li><div class="li9">
+                  <div class='tableauPlaceholder' id='viz1621414294216' style='position: relative'><noscript><a href='#'><img alt='Content Score Dashboard콘텐츠 점수가 높은 웹페이지에서 사용된  Tag 빈도 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;sc&#47;score55&#47;content&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='score55&#47;content' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;sc&#47;score55&#47;content&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='ko' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1621414294216');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='800px';vizElement.style.height='627px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='800px';vizElement.style.height='627px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                </div></li>
+                <li><div class="li10">
+                  <div class='tableauPlaceholder' id='viz1621414923763' style='position: relative'><noscript><a href='#'><img alt='Development Score Dashboard개발 점수가 높은 웹페이지에서 사용된  Tag 빈도 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;sc&#47;score55&#47;develop&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='score55&#47;develop' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;sc&#47;score55&#47;develop&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='ko' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1621414923763');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='800px';vizElement.style.height='627px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='800px';vizElement.style.height='627px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                </div>
+              </li>
+
+            </ul>
+            <p class="pos2">
+                <label for="pos6"></label>
+                <label for="pos7"></label>
+                <label for="pos8"></label>
+                <label for="pos9"></label>
+                <label for="pos10"></label>
+            </p>
+          </div>
+
+        </div>
+    </div>
+  </div>
+
+  <div class="section-container">
+    <div class="container">
+      <div class="row">
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="section-container">
+    <div class="container text-center">
+      <div class="row section-container-spacer">
+        <div class="col-xs-12 col-md-12">
+          <h2>Category Input Section</h2>
+          <p><p style="color: #3874A3;">당신이 궁금해하는 Category(주제)를 입력해 주세요.</p>
+          해당 Category에서 가장 많이 사용된 Design Tag, Technology Tag의 Top5를 보여줍니다.
+            <br>이후 해당 Tag 버튼을 클릭하면 평가 점수가 가장 높게 평가된 웹페이지를 알 수 있습니다.
+            <br><span style="opacity:0.8; font-size:0.85em;">( 평가 기준 - Design, Usability, Creativity, Content, Development )</span>
+          </p>
+    
+          <div class="theme" id="tag-container">
+                {% csrf_token %}
+              <input list="themelist" name="username" id="themes" class="class_themes" placeholder="주제를 입력해주세요." onmousedown="sizeChange()">
+              <datalist id="themelist">
+                <option class="themeitem" value="Architecture">
+                <option class="themeitem" value="Art & Illustration">
+                <option class="themeitem" value="Business & Corporate">
+                <option value="Culture & Education">
+                <option value="Design Agencies">
+                <option value="E-Commerce">
+                <option value="Events">
+                <option value="Experimental">
+                <option value="Fashion">
+                <option value="Film & TV">
+                <option value="Food & Drink">
+                <option value="Games & Entertainment">
+                <option value="Hotel / Restaurant">
+                <option value="Institutions">
+                <option value="Magazine / Newspaper / Blog">
+                <option value="Mobile & Apps">
+                <option value="Music & Sound">
+                <option value="Other">
+                <option value="Photography">
+                <option value="Promotional">
+                <option value="Real Estate">
+                <option value="Sports">
+                <option value="Startups">
+                <option value="Technology">
+                <option value="Web & Interactive">
+              </datalist>
+              <button id="titleSelectBtn" class="Search-btn" type="submit"><img src="../static/assets/loupe.png"
+                  alt="search-img" width="40%"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="section-container result-section">
+    <div class="container text-center">
+      <div class="row section-container-spacer">
+        <div class="col-xs-12 col-md-12">
+          <h2 class="text-center">Tags Result</h2>
+          <br>
+          <p class="result-p">Most Used <span><strong>Design Tag</strong></span> with '<span class="titleText" > ? </span>'</p>
+          <div class="fix-btn-container">
+          <span class="notify_text title_notify_text">"Please Choose a Title."</span>
+          <div class="btn-container">
+          {% csrf_token %}
+          <button id = "DesignBtn1" class="btn" value ={{tag1}} name ="tag" type="submit">Tag1</button>
+          <button id = "DesignBtn2" class="btn" value ={{tag2}} name ="tag" type="submit">Tag2</button>
+          <button id = "DesignBtn3" class="btn" value ={{tag3}} name ="tag" type="submit">Tag3</button>
+          <button id = "DesignBtn4" class="btn" value ={{tag4}} name ="tag" type="submit">Tag4</button>
+          <button id = "DesignBtn5" class="btn" value ={{tag5}} name ="tag" type="submit">Tag5</button>
+          </div>
+          </div>
+
+          <br><br>
+
+          <p class="result-p">Most Used <span><strong>Technology Tag</strong></span> with '<span class="titleText"> ? </span>'</p>
+          <span class="notify_text title_notify_text">"Please Choose a Title."</span>
+          <div class="btn-container">         
+          {% csrf_token %}
+          <button id = "TechBtn1" class="btn" value ={{tag1}} name ="tag" type="submit">Tag1</button>
+          <button id = "TechBtn2" class="btn" value ={{tag2}} name ="tag" type="submit">Tag2</button>
+          <button id = "TechBtn3" class="btn" value ={{tag3}} name ="tag" type="submit">Tag3</button>
+          <button id = "TechBtn4" class="btn" value ={{tag4}} name ="tag" type="submit">Tag4</button>
+          <button id = "TechBtn5" class="btn" value ={{tag5}} name ="tag" type="submit">Tag5</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+<!--썸네일 띄우기-->
+<div class="section-container contact-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-12">
+        <h2 class="text-center">Web Page Section</h2>
+        <br>
+          <center><p class="result-p" >Highest score with '<span id="tagUrl" class="titleText">Tag</span>' and '<span class="titleText"></span>'</p></center>
+        <div class="section-container-spacer" style="text-align: center;">
+          <div class="fix-url-container" style="height:300px; display:inline-block; ">
+          <center><span class="notify_text url_notify_text" style="text-align:center;">"Please Choose a Tag."</span></center><br>
+          <center>
+          <div class="url-container">
+          <div style="display:inline-block; margin-bottom:10px;">
+          <span class="scoreName">Design Score</span>|
+          <span class="scoreName">Usability Score</span>|
+          <span class="scoreName">Creativity Score</span>|
+          <span class="scoreName">Content Score</span>|
+          <span class="scoreName">Development Score</span>
+          </div>
+          </center>
+          <center>
+            <a id ="url1" href="" target="_blank" ><img id="img1" class="urlLink" src="" width="205px" alt="웹페이지_결과이미지" style="margin:5px 7px;"></a>
+            <a id="url2"  href="" target="_blank" ><img id="img2" class="urlLink" src="" width="205px" alt="웹페이지_결과이미지" style="margin:5px 7px;"></a>
+            <a id="url3" href="" target="_blank" ><img id="img3" class="urlLink" src="" width="205px" alt="웹페이지_결과이미지" style="margin:5px 7px;"></a>
+            <a id="url4" href="" target="_blank" ><img id="img4" class="urlLink" src="" width="205px"alt="웹페이지_결과이미지" style="margin:5px 7px;"></a>
+            <a id="url5" href="" target="_blank" ><img id="img5"class="urlLink" src="" width="205px" alt="웹페이지_결과이미지" style="margin:5px 7px;"></a>
+          </center>        
+          </div>
+          </div>
+        </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+      navbarFixedTopAnimation();
+    });
+  </script>
+
+  <footer class="footer-container white-text-container">
+    <div class="container">
+      <div class="row">
+
+
+        <div class="col-xs-12">
+
+          <div class="row">
+          <div class="col-xs-12 col-sm-7 footer">
+          <p style="opacity:0.8;"><small>광운대학교 소프트웨어 융합대학 정보융합학부</small></p>
+          <div class="footerName">
+          <span><small>강희지</small></span>
+          <span><small>김대희</small></span>
+          <span><small>남현우</small></span>
+          <span><small>서인영</small></span>
+          </div>
+          
+
+          <div class="footerMail">
+            <div><img src='https://vo.la/FY5fU' width='20px' >
+            <span><small>20gmlwl@naver.com</small></span></div>
+            <div><img src='https://vo.la/FY5fU' width='20px'>
+            <span><small> qhtmaldnj@naver.com</small></span></div>
+            <div><img src='https://vo.la/FY5fU' width='20px'>
+            <span><small>hwnim5324@naver.com</small></span></div>
+            <div><img src='https://vo.la/FY5fU' width='20px'>
+            <span><small>dlsdud0717_@naver.com</small></span></div>
+          </div>
+          
+          <div class="footerInsta">
+            <div><img src='https://vo.la/IjYPa' width='18px'>
+            <span><small>vvizi_</small></span></div>
+            <div><img src='https://vo.la/IjYPa' width='18px'>
+            <span><small>veni_vidi_vici_viva</small></span></div>
+            <div><img src='https://vo.la/IjYPa' width='18px'>
+            <span><small>n_hwoooooo</small></span></div>
+            <div><img src='https://vo.la/IjYPa' width='18px'>
+            <span><small>s_iy717</small></span></div>
+          </div>
+
+          </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+      navActivePage();
+      scrollRevelation('.reveal');
+    });
+
+    let designTag1 = 'Tag1';
+    let designTag2 = 'Tag2';
+    let designTag3 = 'Tag3';
+    let designTag4 = 'Tag4';
+    let designTag5 = 'Tag5';
+    let techTag1 = 'Tag1';
+    let techTag2 = 'Tag2';
+    let techTag3 = 'Tag3';
+    let techTag4 = 'Tag4';
+    let techTag5 = 'Tag5';
+
+    $('#titleSelectBtn').click(function(){
+      var title_key = $('#themes').val();
+      $.ajax({
+        url:"{% url 'selectTitle' %}",
+        type:'POST',
+        data : {title_key:title_key},
+        success:function(data){
+          //console.log("타이틀 태그 성공");
+          //console.log(data['test']);
+          //console.log(data['is_exist']);
+          $(".url-container").hide();
+          $(".url_notify_text").show();
+          var btnbox = $(".btn-container");
+          btnbox.hide();
+          if(data['is_exist']==true){
+
+            $('.titleText').text(data['title'])
+            $('#DesignBtn1').text(data['designTag1'])
+            $('#DesignBtn2').text(data['designTag2'])
+            $('#DesignBtn3').text(data['designTag3'])
+            $('#DesignBtn4').text(data['designTag4'])
+            $('#DesignBtn5').text(data['designTag5'])
+            $('#TechBtn1').text(data['techTag1'])
+            $('#TechBtn2').text(data['techTag2'])
+            $('#TechBtn3').text(data['techTag3'])
+            $('#TechBtn4').text(data['techTag4'])
+            $('#TechBtn5').text(data['techTag5'])
+            designTag1 = data['designTag1'];
+            designTag2 = data['designTag2'];
+            designTag3 = data['designTag3'];
+            designTag4 = data['designTag4'];
+            designTag5 = data['designTag5'];
+            techTag1 = data['techTag1'];
+            techTag2 = data['techTag2'];
+            techTag3 = data['techTag3'];
+            techTag4 = data['techTag4'];
+            techTag5 = data['techTag5'];
+            
+            $('.result-section').slideDown(1000,function(){
+              window.scroll({top:3180, left:0, behavior:'smooth'});
+            });
+            $(".title_notify_text").slideUp(50);
+            btnbox.slideDown(1000);
+            $(".contact-container").hide();
+  
+          }else{
+            $(".title_notify_text").text("Tag  '"+title_key+"'  doesn't exist. Try again.")
+            $('.result-section').hide();
+            $(".contact-container").hide();
+            $(".btn-conatainer").hide();
+            $(".title_notify_text").show();
+          }
+        }
+      })
+
+    })
+
+    $('#DesignBtn1').click(function(){
+      var tag_key = designTag1;
+      //console.log(designTag1);
+      $.ajax({
+        url:"{%url 'selectTag'%}",
+        type:'POST',
+        data: {tag_key:tag_key},
+        success:function(data){
+          $('#tagUrl').text(tag_key)
+          document.getElementById('url1').setAttribute('href',data['designUrl'] ); //1
+          document.getElementById('img1').setAttribute('src',data['designImg'] );
+
+          document.getElementById('url2').setAttribute('href',data['usabilityUrl'] ); //2
+          document.getElementById('img2').setAttribute('src',data['usabilityImg'] );
+
+          document.getElementById('url3').setAttribute('href',data['creativtyUrl'] ); //1
+          document.getElementById('img3').setAttribute('src',data['creativtyImg'] );
+
+          document.getElementById('url4').setAttribute('href',data['contentUrl'] ); //2
+          document.getElementById('img4').setAttribute('src',data['contentImg'] );
+
+          document.getElementById('url5').setAttribute('href',data['developerUrl'] ); //2
+          document.getElementById('img5').setAttribute('src',data['developerImg'] );
+
+        }
+      })
+    })
+
+    $('#DesignBtn2').click(function(){
+      var tag_key = designTag2;
+      //console.log(designTag1);
+      $.ajax({
+        url:"{%url 'selectTag'%}",
+        type:'POST',
+        data: {tag_key:tag_key},
+        success:function(data){
+          $('#tagUrl').text(tag_key)
+          document.getElementById('url1').setAttribute('href',data['designUrl'] ); //1
+          document.getElementById('img1').setAttribute('src',data['designImg'] );
+
+          document.getElementById('url2').setAttribute('href',data['usabilityUrl'] ); //2
+          document.getElementById('img2').setAttribute('src',data['usabilityImg'] );
+
+          document.getElementById('url3').setAttribute('href',data['creativtyUrl'] ); //1
+          document.getElementById('img3').setAttribute('src',data['creativtyImg'] );
+
+          document.getElementById('url4').setAttribute('href',data['contentUrl'] ); //2
+          document.getElementById('img4').setAttribute('src',data['contentImg'] );
+
+          document.getElementById('url5').setAttribute('href',data['developerUrl'] ); //2
+          document.getElementById('img5').setAttribute('src',data['developerImg'] );
+
+          console.log("태그선택 성공쓰")
+        }
+      })
+    })
+
+    $('#DesignBtn3').click(function(){
+      var tag_key = designTag3;
+      //console.log(designTag1);
+      $.ajax({
+        url:"{%url 'selectTag'%}",
+        type:'POST',
+        data: {tag_key:tag_key},
+        success:function(data){
+          $('#tagUrl').text(tag_key)
+          document.getElementById('url1').setAttribute('href',data['designUrl'] ); //1
+          document.getElementById('img1').setAttribute('src',data['designImg'] );
+
+          document.getElementById('url2').setAttribute('href',data['usabilityUrl'] ); //2
+          document.getElementById('img2').setAttribute('src',data['usabilityImg'] );
+
+          document.getElementById('url3').setAttribute('href',data['creativtyUrl'] ); //1
+          document.getElementById('img3').setAttribute('src',data['creativtyImg'] );
+
+          document.getElementById('url4').setAttribute('href',data['contentUrl'] ); //2
+          document.getElementById('img4').setAttribute('src',data['contentImg'] );
+
+          document.getElementById('url5').setAttribute('href',data['developerUrl'] ); //2
+          document.getElementById('img5').setAttribute('src',data['developerImg'] );
+
+          console.log("태그선택 성공쓰")
+        }
+      })
+    })
+
+    $('#DesignBtn4').click(function(){
+      var tag_key = designTag4;
+      //console.log(designTag1);
+      $.ajax({
+        url:"{%url 'selectTag'%}",
+        type:'POST',
+        data: {tag_key:tag_key},
+        success:function(data){
+          $('#tagUrl').text(tag_key)
+          document.getElementById('url1').setAttribute('href',data['designUrl'] ); //1
+          document.getElementById('img1').setAttribute('src',data['designImg'] );
+
+          document.getElementById('url2').setAttribute('href',data['usabilityUrl'] ); //2
+          document.getElementById('img2').setAttribute('src',data['usabilityImg'] );
+
+          document.getElementById('url3').setAttribute('href',data['creativtyUrl'] ); //1
+          document.getElementById('img3').setAttribute('src',data['creativtyImg'] );
+
+          document.getElementById('url4').setAttribute('href',data['contentUrl'] ); //2
+          document.getElementById('img4').setAttribute('src',data['contentImg'] );
+
+          document.getElementById('url5').setAttribute('href',data['developerUrl'] ); //2
+          document.getElementById('img5').setAttribute('src',data['developerImg'] );
+
+          console.log("태그선택 성공쓰")
+        }
+      })
+    })
+
+    $('#DesignBtn5').click(function(){
+      var tag_key = designTag5;
+      //console.log(designTag1);
+      $.ajax({
+        url:"{%url 'selectTag'%}",
+        type:'POST',
+        data: {tag_key:tag_key},
+        success:function(data){
+          $('#tagUrl').text(tag_key)
+          document.getElementById('url1').setAttribute('href',data['designUrl'] ); //1
+          document.getElementById('img1').setAttribute('src',data['designImg'] );
+
+          document.getElementById('url2').setAttribute('href',data['usabilityUrl'] ); //2
+          document.getElementById('img2').setAttribute('src',data['usabilityImg'] );
+
+          document.getElementById('url3').setAttribute('href',data['creativtyUrl'] ); //1
+          document.getElementById('img3').setAttribute('src',data['creativtyImg'] );
+
+          document.getElementById('url4').setAttribute('href',data['contentUrl'] ); //2
+          document.getElementById('img4').setAttribute('src',data['contentImg'] );
+
+          document.getElementById('url5').setAttribute('href',data['developerUrl'] ); //2
+          document.getElementById('img5').setAttribute('src',data['developerImg'] );
+
+          console.log("태그선택 성공쓰")
+        }
+      })
+    })
+
+    $('#TechBtn1').click(function(){
+      var tag_key = techTag1;
+      //console.log(designTag1);
+      $.ajax({
+        url:"{%url 'selectTag'%}",
+        type:'POST',
+        data: {tag_key:tag_key},
+        success:function(data){
+          $('#tagUrl').text(tag_key)
+          document.getElementById('url1').setAttribute('href',data['designUrl'] ); //1
+          document.getElementById('img1').setAttribute('src',data['designImg'] );
+
+          document.getElementById('url2').setAttribute('href',data['usabilityUrl'] ); //2
+          document.getElementById('img2').setAttribute('src',data['usabilityImg'] );
+
+          document.getElementById('url3').setAttribute('href',data['creativtyUrl'] ); //1
+          document.getElementById('img3').setAttribute('src',data['creativtyImg'] );
+
+          document.getElementById('url4').setAttribute('href',data['contentUrl'] ); //2
+          document.getElementById('img4').setAttribute('src',data['contentImg'] );
+
+          document.getElementById('url5').setAttribute('href',data['developerUrl'] ); //2
+          document.getElementById('img5').setAttribute('src',data['developerImg'] );
+
+          console.log("태그선택 성공쓰")
+        }
+      })
+    })
+
+    $('#TechBtn2').click(function(){
+      var tag_key = techTag2;
+      //console.log(designTag1);
+      $.ajax({
+        url:"{%url 'selectTag'%}",
+        type:'POST',
+        data: {tag_key:tag_key},
+        success:function(data){
+          $('#tagUrl').text(tag_key)
+          document.getElementById('url1').setAttribute('href',data['designUrl'] ); //1
+          document.getElementById('img1').setAttribute('src',data['designImg'] );
+
+          document.getElementById('url2').setAttribute('href',data['usabilityUrl'] ); //2
+          document.getElementById('img2').setAttribute('src',data['usabilityImg'] );
+
+          document.getElementById('url3').setAttribute('href',data['creativtyUrl'] ); //1
+          document.getElementById('img3').setAttribute('src',data['creativtyImg'] );
+
+          document.getElementById('url4').setAttribute('href',data['contentUrl'] ); //2
+          document.getElementById('img4').setAttribute('src',data['contentImg'] );
+
+          document.getElementById('url5').setAttribute('href',data['developerUrl'] ); //2
+          document.getElementById('img5').setAttribute('src',data['developerImg'] );
+
+          console.log("태그선택 성공쓰")
+        }
+      })
+    })
+
+    $('#TechBtn3').click(function(){
+      var tag_key = techTag3;
+      //console.log(designTag1);
+      $.ajax({
+        url:"{%url 'selectTag'%}",
+        type:'POST',
+        data: {tag_key:tag_key},
+        success:function(data){
+          $('#tagUrl').text(tag_key)
+          document.getElementById('url1').setAttribute('href',data['designUrl'] ); //1
+          document.getElementById('img1').setAttribute('src',data['designImg'] );
+
+          document.getElementById('url2').setAttribute('href',data['usabilityUrl'] ); //2
+          document.getElementById('img2').setAttribute('src',data['usabilityImg'] );
+
+          document.getElementById('url3').setAttribute('href',data['creativtyUrl'] ); //1
+          document.getElementById('img3').setAttribute('src',data['creativtyImg'] );
+
+          document.getElementById('url4').setAttribute('href',data['contentUrl'] ); //2
+          document.getElementById('img4').setAttribute('src',data['contentImg'] );
+
+          document.getElementById('url5').setAttribute('href',data['developerUrl'] ); //2
+          document.getElementById('img5').setAttribute('src',data['developerImg'] );
+
+          console.log("태그선택 성공쓰")
+        }
+      })
+    })
+
+    $('#TechBtn4').click(function(){
+      var tag_key = techTag4;
+      //console.log(designTag1);
+      $.ajax({
+        url:"{%url 'selectTag'%}",
+        type:'POST',
+        data: {tag_key:tag_key},
+        success:function(data){
+          $('#tagUrl').text(tag_key)
+          document.getElementById('url1').setAttribute('href',data['designUrl'] ); //1
+          document.getElementById('img1').setAttribute('src',data['designImg'] );
+
+          document.getElementById('url2').setAttribute('href',data['usabilityUrl'] ); //2
+          document.getElementById('img2').setAttribute('src',data['usabilityImg'] );
+
+          document.getElementById('url3').setAttribute('href',data['creativtyUrl'] ); //1
+          document.getElementById('img3').setAttribute('src',data['creativtyImg'] );
+
+          document.getElementById('url4').setAttribute('href',data['contentUrl'] ); //2
+          document.getElementById('img4').setAttribute('src',data['contentImg'] );
+
+          document.getElementById('url5').setAttribute('href',data['developerUrl'] ); //2
+          document.getElementById('img5').setAttribute('src',data['developerImg'] );
+
+          console.log("태그선택 성공쓰")
+        }
+      })
+    })
+
+    $('#TechBtn5').click(function(){
+      var tag_key = techTag5;
+      //console.log(designTag1);
+      $.ajax({
+        url:"{%url 'selectTag'%}",
+        type:'POST',
+        data: {tag_key:tag_key},
+        success:function(data){
+          $('#tagUrl').text(tag_key)
+          document.getElementById('url1').setAttribute('href',data['designUrl'] ); //1
+          document.getElementById('img1').setAttribute('src',data['designImg'] );
+
+          document.getElementById('url2').setAttribute('href',data['usabilityUrl'] ); //2
+          document.getElementById('img2').setAttribute('src',data['usabilityImg'] );
+
+          document.getElementById('url3').setAttribute('href',data['creativtyUrl'] ); //1
+          document.getElementById('img3').setAttribute('src',data['creativtyImg'] );
+
+          document.getElementById('url4').setAttribute('href',data['contentUrl'] ); //2
+          document.getElementById('img4').setAttribute('src',data['contentImg'] );
+
+          document.getElementById('url5').setAttribute('href',data['developerUrl'] ); //2
+          document.getElementById('img5').setAttribute('src',data['developerImg'] );
+
+          console.log("태그선택 성공쓰")
+        }
+      })
+    })
+
+    function sizeChange() {
+      var divtag = document.getElementById("tag-container");
+      divtag.style = "height:250px; transition-duration:0.8s";
+    }
+
+    $('#themes').focusout(function () {
+      var divtag = $("#tag-container");
+      divtag.css('height', '110px');
+    });
+
+    //새로 추가한 것
+    $('#themes').focus(function(){
+      var inputTitle = $('#themes').val();
+      if(!inputTitle==''){ 
+        var divtag = $("#tag-container");
+        divtag.css('height', '130px');
+      }
+    })
+
+    $(document).ready(function(){
+      //$('.result-section').hide();
+      $('.contact-container').hide();
+
+      $(".btn").click(function(){
+        var urlbox = $(".url-container");
+        if(urlbox.is(":visible")){
+          console.log("success")
+        }else{
+          $(".contact-container").slideDown(1000,function(){
+            window.scroll({top:3700, left:0, behavior:'smooth'});
+          });
+          $(".url_notify_text").slideUp(50);
+        
+          urlbox.slideDown();  
+        }
+      })
+    
+    })
+
+    // #####################################################################################
+    // textbox 선택 시 초기화 시키기.
+    $('.class_themes').focus(function(){ 
+        $('#themes').val('');
+    });
+  
+  </script>
+
+  <script type="text/javascript" src="../static/main.0cf8b554.js"></script>
+</body>
+
+</html>

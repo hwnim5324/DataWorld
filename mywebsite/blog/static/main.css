@@ -1,0 +1,110 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&family=Shadows+Into+Light&display=swap');
+
+
+.Awwards-logotype-2018 {
+    width: 37.1%;
+    object-fit: contain;
+}
+
+h2{
+    color: #3874A3;
+}
+
+.ex3{
+    width: 40%;
+}
+
+.navbar-logo-img{
+    width: 20px;
+}
+
+
+@keyframes txtColor {
+    0% {
+        opacity: 0.3;
+    }
+    50% {
+        color: #F6C94D;
+    }
+
+    100% {
+        color: #F6C94D;
+    }
+}
+#intro{
+    font-family: 'Rock Salt', cursive;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 4em;
+    color: #F6C94D;;
+    /* animation: txtColor 3s infinite alternate; */
+
+}
+.maker{
+    font-size: 1.1em;
+}
+.logo-img{
+    position: absolute;
+    opacity: 0.15;
+    width: 40%;
+    margin-top: -10%;
+    margin-left: 20%;
+}
+
+
+.theme{
+    text-align: center;
+    padding-top: 3%;
+    margin: auto;
+    margin-top: 3%;
+    width: 50%;
+    height: 110px;
+    background-color: #eff1f6;
+    border-radius: 10px;
+}
+#themes{
+    width: 50%;
+    outline: none;
+    border:none;
+    border-radius: 50px;
+    padding: 1%;
+    padding-left: 3%;
+}
+#themes:focus{
+    
+}
+form input:focus {
+	outline: none;
+}
+.Search-btn{
+    margin-left: 2%;
+    width: 10%;
+    padding: 1%;
+    background-color:#3874A3;
+    border-radius: 50px;
+    border:none;
+    outline: none;
+}
+.result-section{
+    background-color: #EFF1F6;
+}
+.result-p{
+    font-size: 1.2em;
+    font-weight:500;
+}
+.result-p span{
+    color: #3874A3;
+}
+.btn{
+    border-radius: 10px;
+    border-color: #3874A3;
+    border-width: 3px;
+    background-color: #ffffff;
+    width: 11%;
+    height: auto;
+    text-align: center;
+    margin-right: 1.5%;
+}
+.btn:hover{
+    background-color: #3874A3;
+}

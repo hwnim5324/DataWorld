@@ -1,0 +1,171 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&family=Shadows+Into+Light&display=swap');
+@font-face {
+    font-family: 'IBMPlexSansKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+    /* font-weight: normal; */
+    font-style: normal;
+}
+
+.Awwards-logotype-2018 {
+    width: 37.1%;
+    object-fit: contain;
+}
+
+h2{
+    color: #3874A3;
+    font-family: 'IBMPlexSansKR-Regular';
+    font-weight:bolder;
+}
+
+.ex3{
+    width: 40%;
+}
+
+.navbar-logo-img{
+    width: 20px;
+}
+
+
+@keyframes txtColor {
+    0% {
+        opacity: 0.3;
+    }
+    50% {
+        color: #F6C94D;
+    }
+
+    100% {
+        color: #F6C94D;
+    }
+}
+
+#intro{
+    font-family: 'IBMPlexSansKR-Regular';
+    font-size: 2.3em;
+    color: #ffffff;
+    text-align: center;
+}
+p.maker{
+    text-align: center;
+    font-size: 1em;
+    color:#F6C94D;
+}
+.logo-img{
+    position: absolute;
+    /* opacity: 0.15; */
+    width: 5%;
+    margin-top: -10%;
+    margin-left: 20%;
+}
+
+
+.theme{
+    text-align: center;
+    padding-top: 3%;
+    margin: auto;
+    margin-top: 3%;
+    width: 50%;
+    height: 110px;
+    background-color: #eff1f6;
+    border-radius: 10px;
+}
+#themes{
+    width: 50%;
+    outline: none;
+    border:none;
+    border-radius: 50px;
+    padding: 1%;
+    padding-left: 3%;
+}
+
+form input:focus {
+   outline: none;
+}
+.Search-btn{
+    margin-left: 2%;
+    width: 10%;
+    padding: 1%;
+    background-color:#3874A3;
+    border-radius: 50px;
+    border:none;
+    outline: none;
+}
+.result-section{
+    background-color: #EFF1F6;
+}
+.result-p{
+    font-size: 1.2em;
+    font-weight:500;
+}
+.result-p span{
+    color: #3874A3;
+}
+.btn{
+    border-radius: 10px;
+    border-color: #3874A3;
+    border-width: 3px;
+    background-color: #ffffff;
+    width: 11%;
+    height: auto;
+    text-align: center;
+    margin-right: 1.5%;
+}
+.btn:hover{
+    background-color: #3874A3;
+}
+
+
+/* 슬라이드 */
+ul,li{list-style:none;}   
+#slide {
+    width: 100%;
+    position:relative;
+    overflow:hidden;
+    margin: auto;
+    text-align: center;
+    }
+#slide * {
+    margin:0px;
+    padding:0px;
+}
+/* pos갯수 증가하면 ul li width 조절해야함.  */
+#slide ul{width:500%;height:100%;transition:1s; margin-bottom: 5%;}
+#slide ul:after{content:"";display:block;clear:both;}
+#slide li{float:left;width:20%;height:100%;}
+
+#slide input{display:none;}
+
+#slide label{
+    display:inline-block;
+    vertical-align:middle;
+    width:20px;height:20px;
+    border:2px solid #3874A3;
+    background:#fff;
+    transition:0.3s;
+    border-radius:50%;
+    cursor:pointer;
+    }
+#slide .pos{
+    text-align:center;
+    position:absolute;
+    bottom:10px;
+    left:0;width:100%;
+    text-align:center;}
+#pos1:checked~ul{margin-left:0%;}
+#pos2:checked~ul{margin-left:-100%;}
+#pos3:checked~ul{margin-left:-200%;}
+#pos4:checked~ul{margin-left:-300%;}
+#pos5:checked~ul{margin-left:-400%;}
+/* #pos6:checked~ul{margin-left:-500%;} */
+#pos1:checked~.pos>label:nth-child(1){background:#3874A3;}
+#pos2:checked~.pos>label:nth-child(2){background:#3874A3;}
+#pos3:checked~.pos>label:nth-child(3){background:#3874A3;}
+#pos4:checked~.pos>label:nth-child(4){background:#3874A3;}
+#pos5:checked~.pos>label:nth-child(5){background:#3874A3;}
+/* #pos6:checked~.pos>label:nth-child(6){background:#3874A3;} */
+#slide div {
+    display:inline-block;
+    width: 100%;
+    margin: auto;
+}
